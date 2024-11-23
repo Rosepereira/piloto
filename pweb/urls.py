@@ -21,7 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
     path('sobre/', include('home.urls')),
-    path('contato/',include('home.urls')),
-    
-    
+    path('entre_em_contato/',include('home.urls')),
+    path('exibir_item/',include('home.urls')),
+    path('perfil/',include('home.urls')),
+    path('diasemana/',include('home.urls')),
 ]

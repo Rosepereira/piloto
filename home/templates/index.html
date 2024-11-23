@@ -1,16 +1,10 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-</head>
-<body>
-    <a href="{% url 'index' %}">Home |</a>
-    <a href="{% url 'sobre' %}">Sobre |</a>
-    <a href="{% url 'entre_em_contato' %}">Contato </a>
-    
-    <h1>{{message}}</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %} Home{% endblock titulo %}
+
+{% block conteudo %}
+
+<h1> Bem-vindo ao nosso Sistema Web !!</h1>
+
+{% endblock  %}
