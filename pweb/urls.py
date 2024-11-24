@@ -16,13 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+
 
 urlpatterns = [
+    path("", include("home.urls")),
     path('admin/', admin.site.urls),
-    path('',include('home.urls')),
-    path('sobre/', include('home.urls')),
-    path('entre_em_contato/',include('home.urls')),
-    path('exibir_item/',include('home.urls')),
-    path('perfil/',include('home.urls')),
-    path('diasemana/',include('home.urls')),
+    
+    
 ]
